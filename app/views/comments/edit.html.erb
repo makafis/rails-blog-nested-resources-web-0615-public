@@ -1,0 +1,5 @@
+<h1> Edit a Comment to <%= @comment.content %> </h1>
+
+<%= form_for(@comment, :url => post_comment_path(@post, @comment)) do |f| %>
+<%= render 'fields', :f => f %>
+<% end %>
